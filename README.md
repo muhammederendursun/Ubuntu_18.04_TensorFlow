@@ -90,7 +90,7 @@
         -   ```sh
             $ reboot 
              ``` 
-     - Tüm aşamalar hatasız tamamlandıysa masaütsü açılması gerekir. `Sürücü kontrol` aşamasına geçin
+     - Tüm aşamalar hatasız tamamlandıysa masaüstü açılması gerekir. `Sürücü kontrol` aşamasına geçin
 
   - ##### Sürücü Kontrolü
      - Ekran kartı bilgilerinde ekran kartınızın tam modeli listelendi ise kurulum başarılıdır.
