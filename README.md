@@ -50,6 +50,7 @@
   - Sabit diski seçerek kurulumu tamamlayın.
   - Sistem yeniden başladıktan sonra şifreyi girdiğinizde sistem kitlenebilir veya siyah ekran ile karşılaşabilirsiniz sorun ekran kartı sürücüsünden kaynaklıdır.
   
+
 ### Nvidia Driver Kurulumu
 
    - ##### Masaüstü açıldı ise ;
@@ -60,53 +61,53 @@
      - Kullanıcı adınızı ve şifrenizi girerek terminalde oturum açın (Büyük - Küçük harf önemli)
      - `Sürücü Kurulumu` aşamasına geçin.
     
-    - ##### Sürücü Kurulumu
+   - ##### Sürücü Kurulumu
      - İlk olarak update ve uprade işlemini yapın 
         -   ```sh
             $ sudo apt-get update
             $ sudo apt-get upgrade
             ```
        
-   - Nvidia ile ilgili herşeyi temizliyoruz
+     - Nvidia ile ilgili herşeyi temizliyoruz
         -   ```sh
             $ sudo apt-get purge nvidia* 
             ``` 
-    - Nvidia grafik sürücüsünün kurulması için gereken kaynağı ekleyin
+     - Nvidia grafik sürücüsünün kurulması için gereken kaynağı ekleyin
         -   ```sh
             $ sudo add-apt-repository ppa:graphics-drivers
             ```
     
-    - Yeni kaynak eklediğimiz için tekrar update işlemi yapıyoruz
+     - Yeni kaynak eklediğimiz için tekrar update işlemi yapıyoruz
         -   ```sh
             $ sudo apt-get update
              ```
     
-    - Nvidia sürücüsünün 390 sürümünü kuruyoruz
+     - Nvidia sürücüsünün 390 sürümünü kuruyoruz
         -   ```sh
             $ sudo apt-get install nvidia-390 
              ```
-    - Kurulum işlemi tamamlandıktan sonra bilgisayarı yeniden başlatıyoruz.
+     - Kurulum işlemi tamamlandıktan sonra bilgisayarı yeniden başlatıyoruz.
         -   ```sh
             $ reboot 
              ``` 
-    - Tüm aşamalar hatasız tamamlandıysa masaütsü açılması gerekir. `Sürücü kontrol` aşamasına geçin
+     - Tüm aşamalar hatasız tamamlandıysa masaütsü açılması gerekir. `Sürücü kontrol` aşamasına geçin
 
-    - ##### Sürücü Kontrolü
-    - Ekran kartı bilgilerinde ekran kartınızın tam modeli listelendi ise kurulum başarılıdır.
+  - ##### Sürücü Kontrolü
+     - Ekran kartı bilgilerinde ekran kartınızın tam modeli listelendi ise kurulum başarılıdır.
         -   ```sh
             $ nvidia-smi
              ``` 
-     - Ekran kartı için gerekli detaylı bilgiler için "Nvidia Settings" kullanabilirsiniz.
+      - Ekran kartı için gerekli detaylı bilgiler için "Nvidia Settings" kullanabilirsiniz.
          -   ```sh
              $ nvidia-settings
                 ``` 
                 
-    - ##### Sürücü Güncelleme
-    - Ekran kartı sürücüsü olarak 390 sürümünü kurduk fakat CUDA 9 ve CUDNN 7.1.2 sürümleri Nvidia 396 sürümü ile uyumludur bu yüzden beta olan Nvidia 396 sürümünü elimizle değiştirmemiz gerekmektedir.
-    - Uygulamalardan `Software & Updates` uygulamasını açın ve `Additional Drivers` sekmesinden Nvidia 396 sürümünü seçin, ayarları kaydedin.Sistemi yeniden başlatın
+  - ##### Sürücü Güncelleme
+      - Ekran kartı sürücüsü olarak 390 sürümünü kurduk fakat CUDA 9 ve CUDNN 7.1.2 sürümleri Nvidia 396 sürümü ile uyumludur bu yüzden beta olan Nvidia 396 sürümünü elimizle değiştirmemiz gerekmektedir.
+      - Uygulamalardan `Software & Updates` uygulamasını açın ve `Additional Drivers` sekmesinden Nvidia 396 sürümünü seçin, ayarları kaydedin.Sistemi yeniden başlatın
     ![](images/software.png)
     
-    - Ekran kartı sürücü kontrolü için "Nvidia Settings" i açalım. Sürüm resimdeki gibi 396 ise ekran kartının sürücü kurulumu tamamlanmıştır.
+      - Ekran kartı sürücü kontrolü için "Nvidia Settings" i açalım. Sürüm resimdeki gibi 396 ise ekran kartının sürücü kurulumu tamamlanmıştır.
          -   ```sh
              $ nvidia-settings
                 ``` 
