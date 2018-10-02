@@ -17,7 +17,7 @@
   - OpenCV kurulumu.
   - Diğer gereken kütüphanelerin kurulumu.
 
-### Eatcher İndirme
+### Etcher İndirme
 
   -[Etcher](https://etcher.io/)  bu linkden işletim sisteminize göre programı indirin.
 
